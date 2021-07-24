@@ -1,6 +1,7 @@
 from collections import namedtuple
 from test_one import Dinner
 import pytest
+import time
 
 
 def test_asdict():
@@ -13,8 +14,9 @@ def test_asdict():
     assert t_dict == excepted
 
 
-@pytest.mark.run_first
+# @pytest.mark.run_first
 def test_replace():
+    time.sleep(1)
     t_before = Dinner('meat', 'Sam', False)
     t_after = t_before._replace(id=10, ready=True)
     t_expected = Dinner('meat', 'Sam', True, 10)

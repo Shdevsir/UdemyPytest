@@ -1,5 +1,4 @@
 from collections import namedtuple
-import py
 import pytest
 
 Dinner = namedtuple('Dinner', ['food', 'cook', 'ready', 'id'])
@@ -12,7 +11,7 @@ def test_defaults():
     assert t1 == t2
 
 
-@pytest.mark.run_first
+# @pytest.mark.run_first
 def test_num_access():
     t = Dinner('potatoes', 'Sam')
     assert t.food == 'potatoes'
