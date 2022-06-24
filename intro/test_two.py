@@ -1,6 +1,4 @@
-from collections import namedtuple
-from test_one import Dinner
-import pytest
+from intro.test_one import Dinner
 import time
 
 

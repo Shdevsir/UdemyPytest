@@ -1,5 +1,4 @@
 from collections import namedtuple
-import pytest
 
 Dinner = namedtuple('Dinner', ['food', 'cook', 'ready', 'id'])
 Dinner.__new__.__defaults__ = (None, None, False, None)
